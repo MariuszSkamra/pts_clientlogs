@@ -1,0 +1,173 @@
+2016-07-19 17:40:13,617 root DEBUG autoptsclient_common.py   349   run_test_case             : Starting TestCase wrapper GATT TC_GAT_CL_BV_02_C
+2016-07-19 17:40:13,617 root DEBUG testcase.py               499   pre_run                   : pre_run GATT TC_GAT_CL_BV_02_C
+2016-07-19 17:40:13,617 root DEBUG testcase.py               502   pre_run                   : About to run test case GATT TC_GAT_CL_BV_02_C with commands:
+2016-07-19 17:40:13,617 root DEBUG testcase.py               504   pre_run                   : 0) ptsprojects.testcase.TestFunc <bound method ZephyrCtl.start of <ptsprojects.zephyr.iutctl.ZephyrCtl instance at 0x7fb5998063f8>> None None () {}
+2016-07-19 17:40:13,617 root DEBUG testcase.py               504   pre_run                   : 1) ptsprojects.testcase.TestFunc <function core_reg_svc_gap at 0x7fb5997d8a28> None None () {}
+2016-07-19 17:40:13,618 root DEBUG testcase.py               504   pre_run                   : 2) ptsprojects.testcase.TestFunc <function core_reg_svc_gatts at 0x7fb5997d8aa0> None None () {}
+2016-07-19 17:40:13,618 root DEBUG testcase.py               504   pre_run                   : 3) ptsprojects.testcase.TestFunc <function gap_conn at 0x7fb5997d8cf8> 2 None ('00:1B:DC:E0:37:6C', 0) {}
+2016-07-19 17:40:13,618 root DEBUG testcase.py               504   pre_run                   : 4) ptsprojects.testcase.TestFunc <function gap_connected_ev at 0x7fb5997d8c80> 2 None ('00:1B:DC:E0:37:6C', 0) {}
+2016-07-19 17:40:13,618 root DEBUG testcase.py               504   pre_run                   : 5) ptsprojects.testcase.TestFunc <function gattc_write at 0x7fb5997eff50> 74 None (0, '00:1B:DC:E0:37:6C', 'MMI_arg_value_1', '12', 'MMI_arg_value_2') {}
+2016-07-19 17:40:13,618 root DEBUG testcase.py               504   pre_run                   : 6) ptsprojects.testcase.TestFunc <function gattc_write_rsp at 0x7fb5997f0a28> 74 None () {}
+2016-07-19 17:40:13,618 root DEBUG testcase.py               504   pre_run                   : 7) ptsprojects.testcase.TestFunc <function gap_disconn at 0x7fb5997d8de8> 3 None ('00:1B:DC:E0:37:6C', 0) {}
+2016-07-19 17:40:13,618 root DEBUG testcase.py               504   pre_run                   : 8) ptsprojects.testcase.TestFunc <function gap_disconnected_ev at 0x7fb5997d8d70> 3 None ('00:1B:DC:E0:37:6C', 0) {}
+2016-07-19 17:40:13,618 root DEBUG testcase.py               504   pre_run                   : 9) ptsprojects.testcase.TestFuncCleanUp <bound method ZephyrCtl.stop of <ptsprojects.zephyr.iutctl.ZephyrCtl instance at 0x7fb5998063f8>> None None () {}
+2016-07-19 17:40:13,618 root DEBUG testcase.py               201   start                     : Starting test function: ptsprojects.testcase.TestFunc <bound method ZephyrCtl.start of <ptsprojects.zephyr.iutctl.ZephyrCtl instance at 0x7fb5998063f8>> None None () {}
+2016-07-19 17:40:13,619 root DEBUG testcase.py               209   start                     : Test function parameters: args=(), kwds={}
+2016-07-19 17:40:13,619 root DEBUG iutctl.py                 173   start                     : ptsprojects.zephyr.iutctl.ZephyrCtl.start
+2016-07-19 17:40:13,619 root DEBUG iutctl.py                 160   reset_board               : About to reset DUT: "/home/skamrmar/bin/zflash/openocd/bin/openocd -s /home/skamrmar/bin/zflash/openocd/share/scripts -f /home/skamrmar/bin/zflash/boards/mountatlas/openocd.cfg -c 'init' -c 'reset run' -c 'shutdown'"
+2016-07-19 17:40:15,600 root DEBUG iutctl.py                 184   start                     : Starting socat process: socat -x -v /dev/ttyUSB1,raw,b115200 UNIX-CONNECT:/tmp/bt-stack-tester
+2016-07-19 17:40:15,602 root DEBUG iutctl.py                 56    accept                    : accept
+2016-07-19 17:40:15,604 root DEBUG testcase.py               201   start                     : Starting test function: ptsprojects.testcase.TestFunc <function core_reg_svc_gap at 0x7fb5997d8a28> None None () {}
+2016-07-19 17:40:15,604 root DEBUG testcase.py               209   start                     : Test function parameters: args=(), kwds={}
+2016-07-19 17:40:15,605 root DEBUG btp.py                    226   core_reg_svc_gap          : core_reg_svc_gap
+2016-07-19 17:40:15,605 root DEBUG iutctl.py                 98    send                      : send, 0 3 255 1
+2016-07-19 17:40:15,605 root DEBUG iutctl.py                 108   send                      : btpclient command: send 0 3 255 01
+2016-07-19 17:40:15,605 root DEBUG btpparser.py              59    enc_frame                 : enc_frame, 0 3 255 '\x01'
+2016-07-19 17:40:15,605 root DEBUG iutctl.py                 112   send                      : sending frame '\x00\x03\xff\x01\x00\x01'
+2016-07-19 17:40:17,154 root DEBUG btp.py                    246   core_reg_svc_rsp_succ     : core_reg_svc_rsp_succ
+2016-07-19 17:40:17,154 root DEBUG iutctl.py                 64    read                      : read
+2016-07-19 17:40:17,223 root DEBUG btpparser.py              39    dec_hdr                   : dec_hdr, bytearray(b'\x00\x03\xff\x00\x00')
+2016-07-19 17:40:17,224 root DEBUG iutctl.py                 78    read                      : Received: hdr: header(svc_id=0, op=3, ctrl_index=255, data_len=0) bytearray(b'\x00\x03\xff\x00\x00')
+2016-07-19 17:40:17,224 root DEBUG btpparser.py              49    dec_data                  : dec_data, bytearray(b'')
+2016-07-19 17:40:17,224 root DEBUG iutctl.py                 91    read                      : Received data: ('',), bytearray(b'')
+2016-07-19 17:40:17,224 root DEBUG btp.py                    257   core_reg_svc_rsp_succ     : received header(svc_id=0, op=3, ctrl_index=255, data_len=0) ('',)
+2016-07-19 17:40:17,225 root DEBUG btp.py                    258   core_reg_svc_rsp_succ     : expected ((0, 3, 255, 0), ('',))
+2016-07-19 17:40:17,225 root DEBUG btp.py                    264   core_reg_svc_rsp_succ     : response is valid
+2016-07-19 17:40:17,225 root DEBUG testcase.py               201   start                     : Starting test function: ptsprojects.testcase.TestFunc <function core_reg_svc_gatts at 0x7fb5997d8aa0> None None () {}
+2016-07-19 17:40:17,225 root DEBUG testcase.py               209   start                     : Test function parameters: args=(), kwds={}
+2016-07-19 17:40:17,226 root DEBUG btp.py                    237   core_reg_svc_gatts        : core_reg_svc_gatts
+2016-07-19 17:40:17,226 root DEBUG iutctl.py                 98    send                      : send, 0 3 255 2
+2016-07-19 17:40:17,226 root DEBUG iutctl.py                 108   send                      : btpclient command: send 0 3 255 02
+2016-07-19 17:40:17,226 root DEBUG btpparser.py              59    enc_frame                 : enc_frame, 0 3 255 '\x02'
+2016-07-19 17:40:17,226 root DEBUG iutctl.py                 112   send                      : sending frame '\x00\x03\xff\x01\x00\x02'
+2016-07-19 17:40:17,227 root DEBUG btp.py                    246   core_reg_svc_rsp_succ     : core_reg_svc_rsp_succ
+2016-07-19 17:40:17,227 root DEBUG iutctl.py                 64    read                      : read
+2016-07-19 17:40:17,229 root DEBUG btpparser.py              39    dec_hdr                   : dec_hdr, bytearray(b'\x00\x03\xff\x00\x00')
+2016-07-19 17:40:17,231 root DEBUG iutctl.py                 78    read                      : Received: hdr: header(svc_id=0, op=3, ctrl_index=255, data_len=0) bytearray(b'\x00\x03\xff\x00\x00')
+2016-07-19 17:40:17,231 root DEBUG btpparser.py              49    dec_data                  : dec_data, bytearray(b'')
+2016-07-19 17:40:17,231 root DEBUG iutctl.py                 91    read                      : Received data: ('',), bytearray(b'')
+2016-07-19 17:40:17,231 root DEBUG btp.py                    257   core_reg_svc_rsp_succ     : received header(svc_id=0, op=3, ctrl_index=255, data_len=0) ('',)
+2016-07-19 17:40:17,231 root DEBUG btp.py                    258   core_reg_svc_rsp_succ     : expected ((0, 3, 255, 0), ('',))
+2016-07-19 17:40:17,232 root DEBUG btp.py                    264   core_reg_svc_rsp_succ     : response is valid
+2016-07-19 17:40:26,147 ClientCallback.on_implicit_send INFO autoptsclient_common.py   116   on_implicit_send          : ********************
+2016-07-19 17:40:26,147 ClientCallback.on_implicit_send INFO autoptsclient_common.py   117   on_implicit_send          : BEGIN OnImplicitSend:
+2016-07-19 17:40:26,147 ClientCallback.on_implicit_send INFO autoptsclient_common.py   118   on_implicit_send          : project_name: GATT
+2016-07-19 17:40:26,147 ClientCallback.on_implicit_send INFO autoptsclient_common.py   119   on_implicit_send          : wid: 2
+2016-07-19 17:40:26,147 ClientCallback.on_implicit_send INFO autoptsclient_common.py   120   on_implicit_send          : test_case_name: TC_GAT_CL_BV_02_C
+2016-07-19 17:40:26,148 ClientCallback.on_implicit_send INFO autoptsclient_common.py   121   on_implicit_send          : description: Please initiate a GATT connection to the PTS.
+
+Description: Verify that the Implementation Under Test (IUT) can initiate GATT connect request to PTS.
+2016-07-19 17:40:26,148 ClientCallback.on_implicit_send INFO autoptsclient_common.py   122   on_implicit_send          : style: MMI_Style_Ok_Cancel2 0x11141
+2016-07-19 17:40:26,148 ClientCallback.on_implicit_send INFO autoptsclient_common.py   124   on_implicit_send          : response: 3063192 <type 'int'> 11076672
+2016-07-19 17:40:26,148 ClientCallback.on_implicit_send INFO autoptsclient_common.py   125   on_implicit_send          : response_size: 2048
+2016-07-19 17:40:26,148 ClientCallback.on_implicit_send INFO autoptsclient_common.py   127   on_implicit_send          : response_is_present: 0 <type 'int'>
+2016-07-19 17:40:26,148 ClientCallback.on_implicit_send INFO autoptsclient_common.py   131   on_implicit_send          : Calling test cases on_implicit_send
+2016-07-19 17:40:26,149 root DEBUG testcase.py               467   on_implicit_send          : GATT TC_GAT_CL_BV_02_C on_implicit_send
+2016-07-19 17:40:26,149 root DEBUG testcase.py               201   start                     : Starting test function: ptsprojects.testcase.TestFunc <function gap_conn at 0x7fb5997d8cf8> 2 None ('00:1B:DC:E0:37:6C', 0) {}
+2016-07-19 17:40:26,149 root DEBUG testcase.py               209   start                     : Test function parameters: args=('00:1B:DC:E0:37:6C', 0), kwds={}
+2016-07-19 17:40:26,149 root DEBUG btp.py                    329   gap_conn                  : gap_conn '00:1B:DC:E0:37:6C' 0
+2016-07-19 17:40:26,149 root DEBUG iutctl.py                 98    send                      : send, 1 14 0 bytearray(b'\x00l7\xe0\xdc\x1b\x00')
+2016-07-19 17:40:26,149 root DEBUG iutctl.py                 108   send                      : btpclient command: send 1 14 0 006c37e0dc1b00
+2016-07-19 17:40:26,150 root DEBUG btpparser.py              59    enc_frame                 : enc_frame, 1 14 0 bytearray(b'\x00l7\xe0\xdc\x1b\x00')
+2016-07-19 17:40:26,150 root DEBUG iutctl.py                 112   send                      : sending frame '\x01\x0e\x00\x07\x00\x00l7\xe0\xdc\x1b\x00'
+2016-07-19 17:40:26,150 root DEBUG btp.py                    588   gap_command_rsp_succ      : gap_command_rsp_succ
+2016-07-19 17:40:26,150 root DEBUG iutctl.py                 64    read                      : read
+2016-07-19 17:40:26,154 root DEBUG btpparser.py              39    dec_hdr                   : dec_hdr, bytearray(b'\x01\x0e\x00\x00\x00')
+2016-07-19 17:40:26,155 root DEBUG iutctl.py                 78    read                      : Received: hdr: header(svc_id=1, op=14, ctrl_index=0, data_len=0) bytearray(b'\x01\x0e\x00\x00\x00')
+2016-07-19 17:40:26,155 root DEBUG btpparser.py              49    dec_data                  : dec_data, bytearray(b'')
+2016-07-19 17:40:26,155 root DEBUG iutctl.py                 91    read                      : Received data: ('',), bytearray(b'')
+2016-07-19 17:40:26,156 root DEBUG btp.py                    593   gap_command_rsp_succ      : received header(svc_id=1, op=14, ctrl_index=0, data_len=0) ('',)
+2016-07-19 17:40:26,156 root DEBUG testcase.py               201   start                     : Starting test function: ptsprojects.testcase.TestFunc <function gap_connected_ev at 0x7fb5997d8c80> 2 None ('00:1B:DC:E0:37:6C', 0) {}
+2016-07-19 17:40:26,156 root DEBUG testcase.py               209   start                     : Test function parameters: args=('00:1B:DC:E0:37:6C', 0), kwds={}
+2016-07-19 17:40:26,156 root DEBUG btp.py                    309   gap_connected_ev          : gap_connected_ev '00:1B:DC:E0:37:6C' 0
+2016-07-19 17:40:26,156 root DEBUG iutctl.py                 64    read                      : read
+2016-07-19 17:40:26,587 root DEBUG btpparser.py              39    dec_hdr                   : dec_hdr, bytearray(b'\x01\x82\x00\x07\x00')
+2016-07-19 17:40:26,588 root DEBUG iutctl.py                 78    read                      : Received: hdr: header(svc_id=1, op=130, ctrl_index=0, data_len=7) bytearray(b'\x01\x82\x00\x07\x00')
+2016-07-19 17:40:26,588 root DEBUG btpparser.py              49    dec_data                  : dec_data, bytearray(b'l7\xe0\xdc\x1b\x00\x00')
+2016-07-19 17:40:26,588 root DEBUG iutctl.py                 91    read                      : Received data: ('l7\xe0\xdc\x1b\x00\x00',), bytearray(b'l7\xe0\xdc\x1b\x00\x00')
+2016-07-19 17:40:26,588 root DEBUG btp.py                    313   gap_connected_ev          : received header(svc_id=1, op=130, ctrl_index=0, data_len=7) ('l7\xe0\xdc\x1b\x00\x00',)
+2016-07-19 17:40:26,589 root DEBUG testcase.py               494   on_implicit_send          : Sending response 'OK'
+2016-07-19 17:40:26,589 ClientCallback.on_implicit_send INFO autoptsclient_common.py   143   on_implicit_send          : test case returned on_implicit_send, response: OK
+2016-07-19 17:40:26,589 ClientCallback.on_implicit_send INFO autoptsclient_common.py   151   on_implicit_send          : END OnImplicitSend:
+2016-07-19 17:40:26,589 ClientCallback.on_implicit_send INFO autoptsclient_common.py   152   on_implicit_send          : ********************
+2016-07-19 17:40:26,600 ClientCallback.on_implicit_send INFO autoptsclient_common.py   116   on_implicit_send          : ********************
+2016-07-19 17:40:26,600 ClientCallback.on_implicit_send INFO autoptsclient_common.py   117   on_implicit_send          : BEGIN OnImplicitSend:
+2016-07-19 17:40:26,601 ClientCallback.on_implicit_send INFO autoptsclient_common.py   118   on_implicit_send          : project_name: GATT
+2016-07-19 17:40:26,601 ClientCallback.on_implicit_send INFO autoptsclient_common.py   119   on_implicit_send          : wid: 74
+2016-07-19 17:40:26,601 ClientCallback.on_implicit_send INFO autoptsclient_common.py   120   on_implicit_send          : test_case_name: TC_GAT_CL_BV_02_C
+2016-07-19 17:40:26,601 ClientCallback.on_implicit_send INFO autoptsclient_common.py   121   on_implicit_send          : description: Please send write request with characteristic handle = '00C2'O with <= '15' byte of any octet value to the PTS.
+
+Description: Verify that the Implementation Under Test (IUT) can send write request.
+2016-07-19 17:40:26,601 ClientCallback.on_implicit_send INFO autoptsclient_common.py   122   on_implicit_send          : style: MMI_Style_Ok_Cancel2 0x11141
+2016-07-19 17:40:26,601 ClientCallback.on_implicit_send INFO autoptsclient_common.py   124   on_implicit_send          : response: 3063192 <type 'int'> 11076672
+2016-07-19 17:40:26,602 ClientCallback.on_implicit_send INFO autoptsclient_common.py   125   on_implicit_send          : response_size: 2048
+2016-07-19 17:40:26,602 ClientCallback.on_implicit_send INFO autoptsclient_common.py   127   on_implicit_send          : response_is_present: 0 <type 'int'>
+2016-07-19 17:40:26,602 ClientCallback.on_implicit_send INFO autoptsclient_common.py   131   on_implicit_send          : Calling test cases on_implicit_send
+2016-07-19 17:40:26,602 root DEBUG testcase.py               467   on_implicit_send          : GATT TC_GAT_CL_BV_02_C on_implicit_send
+2016-07-19 17:40:26,602 root DEBUG testcase.py               59    parse_description         : parse_description "Please send write request with characteristic handle = '00C2'O with <= '15' byte of any octet value to the PTS.\n\nDescription: Verify that the Implementation Under Test (IUT) can send write request."
+2016-07-19 17:40:26,602 root DEBUG testcase.py               63    parse_description         : Parse result: ['00C2', '15']
+2016-07-19 17:40:26,602 root DEBUG testcase.py               201   start                     : Starting test function: ptsprojects.testcase.TestFunc <function gattc_write at 0x7fb5997eff50> 74 None (0, '00:1B:DC:E0:37:6C', 'MMI_arg_value_1', '12', 'MMI_arg_value_2') {}
+2016-07-19 17:40:26,603 root DEBUG testcase.py               78    process_args              : process_args: (0, '00:1B:DC:E0:37:6C', 'MMI_arg_value_1', '12', 'MMI_arg_value_2')
+2016-07-19 17:40:26,603 root DEBUG testcase.py               79    process_args              : MMI.args now ['00C2', '15']
+2016-07-19 17:40:26,603 root DEBUG testcase.py               93    process_args              : returning (0, '00:1B:DC:E0:37:6C', '00C2', '12', '15')
+2016-07-19 17:40:26,603 root DEBUG testcase.py               209   start                     : Test function parameters: args=(0, '00:1B:DC:E0:37:6C', '00C2', '12', '15'), kwds={}
+2016-07-19 17:40:26,603 root DEBUG btp.py                    1082  gattc_write               : gattc_write 0 '00:1B:DC:E0:37:6C' '00C2' '12' '15'
+2016-07-19 17:40:26,603 root DEBUG iutctl.py                 98    send                      : send, 2 23 0 bytearray(b'\x00l7\xe0\xdc\x1b\x00\xc2\x00\x0f\x00\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12')
+2016-07-19 17:40:26,604 root DEBUG iutctl.py                 108   send                      : btpclient command: send 2 23 0 006c37e0dc1b00c2000f00121212121212121212121212121212
+2016-07-19 17:40:26,604 root DEBUG btpparser.py              59    enc_frame                 : enc_frame, 2 23 0 bytearray(b'\x00l7\xe0\xdc\x1b\x00\xc2\x00\x0f\x00\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12')
+2016-07-19 17:40:26,604 root DEBUG iutctl.py                 112   send                      : sending frame '\x02\x17\x00\x1a\x00\x00l7\xe0\xdc\x1b\x00\xc2\x00\x0f\x00\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12\x12'
+2016-07-19 17:40:26,604 root DEBUG testcase.py               201   start                     : Starting test function: ptsprojects.testcase.TestFunc <function gattc_write_rsp at 0x7fb5997f0a28> 74 None () {}
+2016-07-19 17:40:26,604 root DEBUG testcase.py               209   start                     : Test function parameters: args=(), kwds={}
+2016-07-19 17:40:26,605 root DEBUG iutctl.py                 64    read                      : read
+2016-07-19 17:40:58,785 root DEBUG btpparser.py              39    dec_hdr                   : dec_hdr, bytearray(b'\x01\x83\x00\x07\x00')
+2016-07-19 17:40:58,786 root DEBUG iutctl.py                 78    read                      : Received: hdr: header(svc_id=1, op=131, ctrl_index=0, data_len=7) bytearray(b'\x01\x83\x00\x07\x00')
+2016-07-19 17:40:58,786 root DEBUG btpparser.py              49    dec_data                  : dec_data, bytearray(b'l7\xe0\xdc\x1b\x00\x00')
+2016-07-19 17:40:58,786 root DEBUG iutctl.py                 91    read                      : Received data: ('l7\xe0\xdc\x1b\x00\x00',), bytearray(b'l7\xe0\xdc\x1b\x00\x00')
+2016-07-19 17:40:58,787 root DEBUG btp.py                    1656  gattc_write_rsp           : gattc_write_rsp received header(svc_id=1, op=131, ctrl_index=0, data_len=7) ('l7\xe0\xdc\x1b\x00\x00',)
+2016-07-19 17:40:58,787 ClientCallback.on_implicit_send INFO autoptsclient_common.py   146   on_implicit_send          : Caught exception
+2016-07-19 17:40:58,787 ClientCallback.on_implicit_send INFO autoptsclient_common.py   147   on_implicit_send          : Incorrect service ID 1 in the response, expected 2!
+2016-07-19 17:40:58,799 ClientCallback.on_implicit_send INFO autoptsclient_common.py   116   on_implicit_send          : ********************
+2016-07-19 17:40:58,799 ClientCallback.on_implicit_send INFO autoptsclient_common.py   117   on_implicit_send          : BEGIN OnImplicitSend:
+2016-07-19 17:40:58,799 ClientCallback.on_implicit_send INFO autoptsclient_common.py   118   on_implicit_send          : project_name: GATT
+2016-07-19 17:40:58,799 ClientCallback.on_implicit_send INFO autoptsclient_common.py   119   on_implicit_send          : wid: 71
+2016-07-19 17:40:58,799 ClientCallback.on_implicit_send INFO autoptsclient_common.py   120   on_implicit_send          : test_case_name: TC_GAT_CL_BV_02_C
+2016-07-19 17:40:58,800 ClientCallback.on_implicit_send INFO autoptsclient_common.py   121   on_implicit_send          : description: Please wait for 30 second timeout to abort the procedure.
+
+Description: Verify that the Implementation Under Test (IUT) can handle timeout after send Write characteristic without receiving response in 30 seconds.
+2016-07-19 17:40:58,800 ClientCallback.on_implicit_send INFO autoptsclient_common.py   122   on_implicit_send          : style: MMI_Style_Ok_Cancel2 0x11141
+2016-07-19 17:40:58,800 ClientCallback.on_implicit_send INFO autoptsclient_common.py   124   on_implicit_send          : response: 3063192 <type 'int'> 11074968
+2016-07-19 17:40:58,800 ClientCallback.on_implicit_send INFO autoptsclient_common.py   125   on_implicit_send          : response_size: 2048
+2016-07-19 17:40:58,800 ClientCallback.on_implicit_send INFO autoptsclient_common.py   127   on_implicit_send          : response_is_present: 0 <type 'int'>
+2016-07-19 17:40:58,800 ClientCallback.on_implicit_send INFO autoptsclient_common.py   131   on_implicit_send          : Calling test cases on_implicit_send
+2016-07-19 17:40:58,800 root DEBUG testcase.py               467   on_implicit_send          : GATT TC_GAT_CL_BV_02_C on_implicit_send
+2016-07-19 17:40:58,801 root DEBUG testcase.py               494   on_implicit_send          : Sending response 'OK'
+2016-07-19 17:40:58,801 ClientCallback.on_implicit_send INFO autoptsclient_common.py   143   on_implicit_send          : test case returned on_implicit_send, response: OK
+2016-07-19 17:40:58,801 ClientCallback.on_implicit_send INFO autoptsclient_common.py   151   on_implicit_send          : END OnImplicitSend:
+2016-07-19 17:40:58,801 ClientCallback.on_implicit_send INFO autoptsclient_common.py   152   on_implicit_send          : ********************
+2016-07-19 17:40:59,304 ClientCallback.log INFO autoptsclient_common.py   82    log                       : PTS_LOGTYPE_START_TEST Start Test Case 
+
++0 ms
+ TC_GAT_CL_BV_02_C
+
+2016-07-19 17:40:59,304 root DEBUG testcase.py               358   log                       : New status GATT TC_GAT_CL_BV_02_C - Started
+2016-07-19 17:40:59,492 ClientCallback.log INFO autoptsclient_common.py   82    log                       : PTS_LOGTYPE_FINAL_VERDICT Final Verdict 
+
++37503 ms
+ PASS
+
+2016-07-19 17:40:59,492 root DEBUG testcase.py               358   log                       : New status GATT TC_GAT_CL_BV_02_C - PASS
+2016-07-19 17:40:59,498 ClientCallback.log INFO autoptsclient_common.py   82    log                       : PTS_LOGTYPE_FINAL_VERDICT Encrypted Verdict 
+
++37503 ms
+ A1#ZWY4MzQ5MDg3MmQwNTIxOGQzMzQ5YjY2ODA5M2MzNjQ5ZDY4NmY0Yjc2MzIzM2VkNTUyNTFhNGU4Mjg1MjI0NA==#9EUQrn+LeOYngKnwCNuc7u4OVbZ3vyU341D0enkkqL+/R7rhhzrUWNJq3fJVTyop
+
+2016-07-19 17:40:59,504 ClientCallback.log INFO autoptsclient_common.py   82    log                       : PTS_LOGTYPE_END_TEST Test Case Ended 
+
++37503 ms
+ TC_GAT_CL_BV_02_C
+
+2016-07-19 17:40:59,586 root DEBUG testcase.py               518   post_run                  : post_run GATT TC_GAT_CL_BV_02_C 
+2016-07-19 17:40:59,587 root DEBUG testcase.py               201   start                     : Starting test function: ptsprojects.testcase.TestFuncCleanUp <bound method ZephyrCtl.stop of <ptsprojects.zephyr.iutctl.ZephyrCtl instance at 0x7fb5998063f8>> None None () {}
+2016-07-19 17:40:59,587 root DEBUG testcase.py               209   start                     : Test function parameters: args=(), kwds={}
+2016-07-19 17:40:59,587 root DEBUG iutctl.py                 207   stop                      : ptsprojects.zephyr.iutctl.ZephyrCtl.stop
+2016-07-19 17:41:02,590 root DEBUG autoptsclient_common.py   395   run_test_case             : Done TestCase wrapper GATT TC_GAT_CL_BV_02_C
