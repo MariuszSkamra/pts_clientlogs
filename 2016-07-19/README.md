@@ -1,0 +1,99 @@
+# Configuration
+
+PTS 6.6, fw 0527
+
+```
+ 1/15   SM   TC_PROT_BV_02_C   PASS
+ 2/15   SM   TC_JW_BV_02_C     PASS
+ 3/15   SM   TC_JW_BI_02_C     PASS
+ 4/15   SM   TC_JW_BI_03_C     PASS
+ 5/15   SM   TC_PKE_BV_02_C    PASS
+ 6/15   SM   TC_PKE_BV_05_C    PASS
+ 7/15   SM   TC_PKE_BI_03_C    PASS
+ 8/15   SM   TC_OOB_BV_06_C    PASS
+ 9/15   SM   TC_OOB_BV_08_C    PASS
+10/15   SM   TC_EKS_BV_02_C    PASS
+11/15   SM   TC_EKS_BI_02_C    PASS
+12/15   SM   TC_KDU_BV_01_C    PASS
+13/15   SM   TC_KDU_BV_07_C    PASS
+14/15   SM   TC_SIP_BV_01_C    PASS
+15/15   SM   TC_SIE_BV_01_C    PASS
+
+Summary:
+
+Status        Count
+===================
+PASS             15
+===================
+Total            15
+
+```
+```
+1/3   L2CAP   TC_LE_REJ_BI_01_C   PASS
+2/3   L2CAP   TC_LE_CPU_BI_02_C   PASS
+3/3   L2CAP   TC_LE_CPU_BV_01_C   PASS
+
+Summary:
+
+Status   Count
+==============
+PASS        3
+==============
+Total       3
+```
+```
+ 1/44   GAP   TC_BROB_BCST_BV_01_C   PASS
+ 2/44   GAP   TC_BROB_BCST_BV_02_C   PASS
+ 3/44   GAP   TC_DISC_NONM_BV_01_C   PASS
+ 4/44   GAP   TC_DISC_NONM_BV_02_C   PASS
+ 5/44   GAP   TC_DISC_LIMM_BV_03_C   PASS
+ 6/44   GAP   TC_DISC_LIMM_BV_04_C   PASS
+ 7/44   GAP   TC_DISC_GENM_BV_03_C   PASS
+ 8/44   GAP   TC_DISC_GENM_BV_04_C   PASS
+ 9/44   GAP   TC_CONN_NCON_BV_01_C   PASS
+10/44   GAP   TC_CONN_NCON_BV_02_C   PASS
+11/44   GAP   TC_CONN_NCON_BV_03_C   PASS
+12/44   GAP   TC_CONN_DCON_BV_01_C   PASS
+13/44   GAP   TC_CONN_UCON_BV_01_C   PASS
+14/44   GAP   TC_CONN_UCON_BV_02_C   PASS
+15/44   GAP   TC_CONN_UCON_BV_03_C   PASS
+16/44   GAP   TC_CONN_CPUP_BV_01_C   PASS
+17/44   GAP   TC_CONN_CPUP_BV_02_C   PASS
+18/44   GAP   TC_CONN_CPUP_BV_03_C   PASS
+19/44   GAP   TC_BOND_NBON_BV_03_C   PASS
+20/44   GAP   TC_BOND_BON_BV_01_C    PASS
+21/44   GAP   TC_BOND_BON_BV_03_C    PASS
+22/44   GAP   TC_SEC_AUT_BV_11_C     FAIL
+23/44   GAP   TC_SEC_AUT_BV_14_C     FAIL
+24/44   GAP   TC_SEC_AUT_BV_18_C     INCONC
+25/44   GAP   TC_SEC_AUT_BV_23_C     INCONC
+26/44   GAP   TC_ADV_BV_01_C         PASS
+27/44   GAP   TC_ADV_BV_02_C         PASS
+28/44   GAP   TC_ADV_BV_03_C         PASS
+29/44   GAP   TC_ADV_BV_04_C         PASS
+30/44   GAP   TC_ADV_BV_05_C         PASS
+31/44   GAP   TC_ADV_BV_08_C         PASS
+32/44   GAP   TC_ADV_BV_09_C         PASS
+33/44   GAP   TC_ADV_BV_10_C         PASS
+34/44   GAP   TC_ADV_BV_11_C         PASS
+35/44   GAP   TC_ADV_BV_12_C         PASS
+36/44   GAP   TC_ADV_BV_13_C         PASS
+37/44   GAP   TC_ADV_BV_14_C         PASS
+38/44   GAP   TC_ADV_BV_15_C         PASS
+39/44   GAP   TC_ADV_BV_16_C         PASS
+40/44   GAP   TC_GAT_BV_01_C         PASS
+41/44   GAP   TC_GAT_BV_04_C         PASS
+42/44   GAP   TC_GAT_BV_05_C         PASS
+43/44   GAP   TC_IDLE_NAMP_BV_01_C   PASS
+44/44   GAP   TC_IDLE_NAMP_BV_02_C   PASS
+
+Summary:
+
+Status   Count
+==============
+FAIL         2
+INCONC       2
+PASS        40
+==============
+Total       44
+```
