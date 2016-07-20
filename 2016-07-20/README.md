@@ -1,0 +1,51 @@
+PTS 6.6
+
+v1.4.0-612-gd84dcb9
+
+mynewt_0_9_0_tag-439-g199d64e
+
+```
+ 1/34   SM   TC_PROT_BV_01_C   PASS
+ 2/34   SM   TC_PROT_BV_02_C   PASS
+ 3/34   SM   TC_JW_BV_02_C     PASS
+ 4/34   SM   TC_JW_BV_05_C     PASS
+ 5/34   SM   TC_JW_BI_01_C     PASS
+ 6/34   SM   TC_JW_BI_02_C     PASS
+ 7/34   SM   TC_JW_BI_03_C     PASS
+ 8/34   SM   TC_JW_BI_04_C     PASS
+ 9/34   SM   TC_PKE_BV_01_C    INCONC
+10/34   SM   TC_PKE_BV_02_C    PASS
+11/34   SM   TC_PKE_BV_04_C    PASS
+12/34   SM   TC_PKE_BV_05_C    PASS
+13/34   SM   TC_PKE_BI_01_C    PASS
+14/34   SM   TC_PKE_BI_02_C    PASS
+15/34   SM   TC_PKE_BI_03_C    PASS
+16/34   SM   TC_OOB_BV_05_C    INCONC
+17/34   SM   TC_OOB_BV_06_C    PASS
+18/34   SM   TC_OOB_BV_07_C    PASS
+19/34   SM   TC_OOB_BV_08_C    PASS
+20/34   SM   TC_EKS_BV_01_C    INCONC
+21/34   SM   TC_EKS_BV_02_C    PASS
+22/34   SM   TC_EKS_BI_01_C    PASS
+23/34   SM   TC_EKS_BI_02_C    PASS
+24/34   SM   TC_SIGN_BV_01_C   PASS
+25/34   SM   TC_SIGN_BV_03_C   PASS
+26/34   SM   TC_SIGN_BI_01_C   PASS
+27/34   SM   TC_KDU_BV_01_C    PASS
+28/34   SM   TC_KDU_BV_03_C    PASS
+29/34   SM   TC_KDU_BV_04_C    INCONC
+30/34   SM   TC_KDU_BV_06_C    INCONC
+31/34   SM   TC_KDU_BV_07_C    PASS
+32/34   SM   TC_SIP_BV_01_C    PASS
+33/34   SM   TC_SIP_BV_02_C    INCONC
+34/34   SM   TC_SIE_BV_01_C    PASS
+
+Summary:
+
+Status   Count
+==============
+INCONC       9
+PASS        25
+==============
+Total       34
+```
